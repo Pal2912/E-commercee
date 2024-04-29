@@ -1,7 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-
 export const GlobalStyle = createGlobalStyle`
-
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +7,14 @@ export const GlobalStyle = createGlobalStyle`
   font-family: "Work Sans", sans-serif;
 }
 
+.simple-sorting{
+  width:75%;
+  align-items:center;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  margin-left:540px;
+}
 
 html {
   font-size: 62.5%;
@@ -46,7 +52,9 @@ h4 {
    font-family: "Work Sans", sans-serif;
 
 }
-
+.btn-main .btn:hover{
+  color:#fff;
+}
 h1 {
   color: ${({ theme }) => theme.colors.heading};
   font-size: 6rem;
@@ -85,8 +93,9 @@ li {
 ${"" /* resuable code section  */}
 
 .container {
-  max-width: 120rem;
+  max-width:150rem;
   margin: 0 auto;
+  background-color:#FFFFFF;
 }
 
 .grid {
@@ -96,6 +105,7 @@ ${"" /* resuable code section  */}
 
 .grid-two-column {
   grid-template-columns: repeat(2, 1fr);
+  padding:90px;
 
 }
 
@@ -119,23 +129,84 @@ ${"" /* resuable code section  */}
     }
 
      .intro-data {
-      margin-bottom: 0;
+      margin-bottom:0;
       text-transform: uppercase;
       color: #5138ee;
     }
+    .parahomesec{
+      margin-bottom:40px;
+      font-size:20px;
+    }
+    .imagetrusted{
+      width:290px;
+      height:250px;
+      border-radius:50%;
+    }
+
+    .input-contact{
+      width:533px;
+      height:55px;
+      margin:20px;
+    }
+
+
+
+.error-main-div{
+  display-flex;
+  justify-content:center;
+  align-item:center;
+}
+.maindivtrusted{
+  margin-top:8rem;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+.paratrusted{
+  text-align:center;
+}
+.line-trusted{
+font-size:26px;
+color:#606060;
+}
+.details-contact{
+  margin-top:70px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;  
+}
+.btn{
+  margin:2rem 0;
+  background-color:rgb(0 0 0 /0%);
+  border:0.1rem solid rgb(98 84 243);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:rgb(98 84 243);
+}
 
    .caption {
       position: absolute;
       top: 15%;
       right: 10%;
-      text-transform: uppercase;
+      text-transform:uppercase;
       background-color: ${({ theme }) => theme.colors.bg};
       color: ${({ theme }) => theme.colors.helper};
       padding: 0.8rem 2rem;
       font-size: 1.2rem;
       border-radius: 2rem;
     }
+.img-style{
+  width:610px;
+  height:400px;
+  }
+  .hero-section-image{
 
+  }
 input, textarea{
     max-width: 50rem;
     color: ${({ theme }) => theme.colors.black};

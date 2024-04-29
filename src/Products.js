@@ -1,8 +1,28 @@
 import React from "react";
 import styled from "styled-components";
+import FilterSection from "./components/FilterSection";
+import ProductList from "./components/ProductList";
+import { useFilterContext } from "./context/Filtercontext";
+import Sort from "./components/Sort";
 
 const Products = () => {
-  return <Wrapper></Wrapper>;
+  return (
+    <Wrapper>
+      <div>
+        <div>
+          <FilterSection />
+        </div>
+        <section>
+          <div>
+            <Sort></Sort>
+          </div>
+          <div>
+            <ProductList/>
+          </div>
+        </section>
+      </div>
+    </Wrapper>
+  );
 };
 
 const Wrapper = styled.section`
